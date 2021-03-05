@@ -15,7 +15,7 @@ const User = ({ userId }) => {
           <p>{user.name}</p>
         </div>
       ) : (
-        <p>User not found</p>
+        <p>Usuário não encontrado</p>
       )}
     </Card>
   );

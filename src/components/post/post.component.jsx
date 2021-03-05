@@ -16,7 +16,7 @@ const Post = ({ postId }) => {
           <p> {post.body} </p>
         </div>
       ) : (
-        <p> No post found </p>
+        <p>Nenhum post encontrado </p>
       )}
     </Card>
   );
