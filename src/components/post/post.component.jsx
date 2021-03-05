@@ -1,20 +1,12 @@
-import React, {useState, useEffect} from 'react';
-
+import React from 'react';
 import Card from '../card/card.component';
 
+import useFetch from '../../effects/use-fetch.effect';
+
 const Post = ({ postId }) => {
-  
-  const [post, setPost] = useState(null);
-
-  useEffect(() => {
-      const fetchPost = async() => {
-      const res_posts = await fetch(`https://jsonplaceholder.typicode.com/posts?id=${postId}`);
-      const posts = await res_posts.json()
-      setPost(posts[0]);
-    }
-
-    fetchPost()
-  })
+  const post = useFetch(
+    `https://jsonplaceholder.typicode.com/posts?id=${postId}`
+  );
 
   return (
     <Card>
@@ -24,7 +16,7 @@ const Post = ({ postId }) => {
           <p> {post.body} </p>
         </div>
       ) : (
-        <p> No post found </p>
+        <p>Post não encontrado</p>
       )}
     </Card>
   );
