@@ -7,7 +7,6 @@ const useFetch = url => {
     const fetchData = async () => {
       const res = await fetch(url);
       const dataArray = await res.json();
-      console.log(dataArray)
       setData(dataArray[0]);
     };
 
