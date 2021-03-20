@@ -8,7 +8,7 @@ const User = ({ user }) => {
       {user ? (
         <div>
           <h3>Username: {user.username}</h3>
-          <p>Name: {user.name}</p>
+          <p> Name: {user.name}</p>
           <p> E-mail: {user.email}</p>
           <p> City: {user.address.city}</p>
         </div>
