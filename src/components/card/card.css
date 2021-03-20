@@ -1,8 +1,6 @@
 .card {
   background-color: lightpink;
-  min-width: 300px;
-  max-width: 600px;
-  min-height: 180px;
+
   display: flex;
   justify-content: center;
   align-items: center;
