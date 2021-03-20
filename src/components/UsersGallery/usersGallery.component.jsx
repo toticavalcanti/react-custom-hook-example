@@ -1,4 +1,4 @@
-import React  from  'react';
+import React, { memo }  from  'react';
 import useFetch from '../../effects/use-fetch.effect';
 import User from '../User/user.component';
 import './usersGallery.css';
@@ -20,4 +20,4 @@ function UsersGallery(){
     )
 }
 
-export default UsersGallery;
+export default memo(UsersGallery);
