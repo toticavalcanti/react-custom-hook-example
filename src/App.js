@@ -1,7 +1,7 @@
 import React from 'react';
 
-import User from './components/user/user.component';
-import Post from './components/post/post.component';
+import User from './components/User/user.component';
+import Post from './components/Post/post.component';
 
 import './App.css';
 

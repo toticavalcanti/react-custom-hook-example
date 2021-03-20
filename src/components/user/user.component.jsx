@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../card/card.component';
+import Card from '../Card/card.component';
 import useFetch from '../../effects/use-fetch.effect';
 
 const User = ({ userId }) => {
