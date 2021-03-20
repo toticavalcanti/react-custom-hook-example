@@ -1,18 +1,15 @@
 import React from 'react';
-import Card from '../card/card.component';
+import Card from '../Card/card.component';
 
-import useFetch from '../../effects/use-fetch.effect';
-
-const User = ({ userId }) => {
-  const user = useFetch(
-    `https://jsonplaceholder.typicode.com/users?id=${userId}`
-  );
+const User = ({ user }) => {
   return (
-    <Card>
+    <Card id={user.id}>
       {user ? (
         <div>
-          <h3>{user.username}</h3>
-          <p>{user.name}</p>
+          <h3>Username: Name {user.username}</h3>
+          <p> Name: {user.name}</p>
+          <p> E-mail: {user.email}</p>
+          <p> City: {user.address.city}</p>
         </div>
       ) : (
         <p>Usuário não encontrado</p>
