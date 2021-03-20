@@ -2,7 +2,6 @@ import React from 'react';
 import Card from '../Card/card.component';
 
 const User = ({ user }) => {
-  console.log(user)
   return (
     <Card id={user.id}>
       {user ? (

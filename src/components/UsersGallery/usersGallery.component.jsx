@@ -10,12 +10,15 @@ function UsersGallery(){
   );
   console.log(users)
 
+  const renderUsers = (user) => {
+      return(<User user={user} key={user.id} />)
+  }
+
   return(
       <div className='container'>
-        {Array.isArray(users) && users.map((user) => <User user={user} key={user.id} />)}
+        {Array.isArray(users) && users.map(renderUsers)}
       </div>
     )
 }
-
 
 export default memo(UsersGallery);
