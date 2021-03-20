@@ -2,12 +2,11 @@ import React from 'react';
 import Card from '../Card/card.component';
 
 const User = ({ user }) => {
-
   return (
-    <Card>
+    <Card id={user.id}>
       {user ? (
         <div>
-          <h3>Username: {user.username}</h3>
+          <h3>Username: Name {user.username}</h3>
           <p> Name: {user.name}</p>
           <p> E-mail: {user.email}</p>
           <p> City: {user.address.city}</p>

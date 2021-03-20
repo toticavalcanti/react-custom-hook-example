@@ -1,5 +1,6 @@
 import React from 'react';
 import UsersGallery from './components/UsersGallery/usersGallery.component';
+
 import './App.css';
 
 const App = props => {
